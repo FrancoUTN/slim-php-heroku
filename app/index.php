@@ -11,7 +11,9 @@ $app = new \Slim\App([]);
 
 
 $app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write("<a href='./ejer6.php'>Ejercicio 6</a>");
+    // $response->getBody()->write("<a href='./ejer6.php'>Ejercicio 6</a>");
+    $response->getBody()->write("<a href='./ejercicios.php'>Ejercicios de la Cursada</a>");
+    $response->getBody()->write("<a href='./parcial.php'>Ejercicios del Parcial</a>");
     return $response;
 
 });
